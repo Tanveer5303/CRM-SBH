@@ -62,7 +62,8 @@
 		<td> ${tempCustomers.email} </td>
 		<td>
 			<!-- display the update data -->
-			<p><a href="${updateLink}">Update</a>|<a href = "${deleteLink}">Delete</a></p>
+			<p><a href="${updateLink}">Update</a>|<a href = "${deleteLink}" 
+			onclick = "if(!(confirm('Are you sure you want to Delete this Customer?')))return false">Delete</a></p>
 		</td>
 	</tr>
 	

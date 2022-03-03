@@ -65,10 +65,10 @@ public class CustomerController {
     public String showFormForDelete(@RequestParam("customerId") int theId,Model theModel) {
 		
 		//get customer from database
-		Customer theCustomer = customerservice.getCustomers(theId);
+		//Customer theCustomer = customerservice.getCustomers(theId);
 		
 		//delete object
-		customerservice.deleteCustomer(theCustomer);
+		customerservice.deleteCustomer(theId);
 		//send over to acual form
 		return "redirect:/customer/list"; 
 	}	
