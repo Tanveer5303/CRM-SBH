@@ -39,6 +39,7 @@ build/
 bin/**
 tmp/**
 tmp/**/*
+*.jar
 *.tmp
 *.bak
 *.swp
